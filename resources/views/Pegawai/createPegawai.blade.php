@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 <head>
   @include('Template.header')
-  <title>AdminLTE 3 | Starter</title>
+  <title>Create Data</title>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
