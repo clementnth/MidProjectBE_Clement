@@ -18,20 +18,16 @@ use App\Http\Controllers\PegawaiController;
 
 
 Route::get('/home', [HomeCotnroller::class, 'index'])->name('home');
-Route::get('/data', [PegawaiController::class, 'index'])->name('data');
+Route::get('/', [PegawaiController::class, 'index'])->name('data');
 Route::get('/createPegawai', [PegawaiController::class, 'create'])->name('createPegawai');
 Route::post('/savePegawai', [PegawaiController::class, 'store'])->name('savePegawai');
 Route::get('/editPegawai/{id}', [PegawaiController::class, 'edit'])->name('editPegawai');
 Route::post('/updatePegawai/{id}', [PegawaiController::class, 'update'])->name('updatePegawai');
 Route::get('/deletePegawai/{id}', [PegawaiController::class, 'destroy'])->name('deletePegawai');
 
-Route::get('/', function () {
-    return view('data');
-});
 
-// Route::get('/create', function() {
-//     return view('createPanel');
-// });
+
+
 
 
 

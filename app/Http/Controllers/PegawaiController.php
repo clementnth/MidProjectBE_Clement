@@ -12,6 +12,7 @@ class PegawaiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         $dataPegawai = Pegawai::paginate(20);
